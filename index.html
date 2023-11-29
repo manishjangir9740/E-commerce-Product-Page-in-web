@@ -1,0 +1,377 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Webiste</title>
+
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header Start -->
+    <div class="header">
+        <nav>
+            <input type="checkbox" id="show-search">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <div class="content">
+                <div class="logo"><a href="index.html"><img src="./images/logo1.png" alt=""></a></div>
+
+                <ul class="links">
+                    <li><a href="#" id="first">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#product">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </div>
+            <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+            <form action="#" class="search-box">
+                <input type="text" placeholder="Search" required>
+                <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+            </form>
+
+        </nav>
+    </div>
+    <!-- Header End -->
+
+
+
+
+
+    <!-- Home Section Start -->
+    <div class="home">
+        <div class="main-text">
+            <h1>Discover The Best <br>Furniture For You</h1>
+           <a href="#view" ><button id="btn"> view more</button></a>
+        </div>
+    </div>
+    <!-- Home Section End -->
+
+
+
+
+
+    <!-- Top Section Card Start -->
+    <section class="offers">
+        <div class="offer-content">
+            <div class="row">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Free Delivery</h3>
+
+            </div>
+            <div class="row">
+                <i class="fa-solid fa-headset"></i>
+                <h3>Support 24/7</h3>
+
+            </div>
+            <div class="row">
+                <i class="fa-solid fa-rotate-left"></i>
+                <h3>30 Day Return</h3>
+
+            </div>
+            <div class="row">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h3>Secure Shopping</h3>
+
+            </div>
+        </div>
+    </section>
+    <!-- Top Section Card End -->
+
+
+
+
+
+    <!-- About Section Start -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./images/about-img.png" alt="">
+        </div>
+        <div class="about-text">
+            <h3>Furniture service About us</h3>
+            <p>Welcome to Furniture Service, your ultimate destination for high-quality furniture and exceptional customer service. Our journey began with a passion for crafting beautiful, functional pieces that elevate living spaces.</p>
+            <p>At Furniture Service, we believe in:</p>
+            <p>
+              Quality craftsmanship: Each piece is meticulously crafted using the finest materials and techniques.
+              Customer satisfaction: Your satisfaction is our priority, and we strive to exceed your expectations.
+              Unique designs: Our collection showcases unique and innovative designs that suit various tastes and preferences.
+      
+            Whether you're furnishing a cozy corner or revamping an entire home, our diverse range of furniture caters to every need. From modern minimalism to timeless classics, we have something for everyone.</p>
+            
+            <p>Thank you for choosing Furniture Service. Let us help you create spaces you'll love.</p>
+            <button id="about-btn">Read More...</button>
+        </div>
+        
+    </section>
+    <!-- About Section End -->
+
+
+
+
+
+    <!-- Product Section Start -->
+    <section class="product" id="product">
+        <div id="view" class="main-txt">
+            <h3>Products</h3>
+        </div>
+        <div class="card-content">
+            <div class="row">
+                <img src="./images/p1.png" alt="">
+                <div class="card-body">
+                    <h3>Sofas</h3>
+                    <h5 class="price">Price $999</h5>
+                    <button onclick="addToCart('Product 1', 999)">Order Now</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./images/p2.png" alt="">
+                <div class="card-body">
+                    <h3>Chair</h3>
+                    <h5 class="price">Price $250</h5>
+                    <button onclick="addToCart('Product 2', 250)">Order Now</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./images/p3.png" alt="">
+                <div class="card-body">
+                    <h3>Chair</h3>
+
+                    <h5 class="price">Price $350</h5>
+                    <button onclick="addToCart('Product 3', 350)">Order Now</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./images/p4.png" alt="">
+                <div class="card-body">
+                    <h3>Chair</h3>
+
+                    <h5 class="price">Price $129</h5>
+                    <button onclick="addToCart('Product 4', 129)">Order Now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-content">
+            <div class="row">
+                <img src="./images/p5.png" alt="">
+                <div class="card-body">
+                    <h3>Chair</h3>
+
+                    <h5 class="price">Price $109</h5>
+                    <button onclick="addToCart('Product 5', 109)">Order Now</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./images/p6.png" alt="">
+                <div class="card-body">
+                    <h3> Coffee Table </h3>
+                    <h5 class="price">Price $199</h5>
+                    <button onclick="addToCart('Product 6', 199)">Order Now</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./images/p7.png" alt="">
+                <div class="card-body">
+                    <h3>Tray</h3>
+                    <h5 class="price">Price $99</h5>
+                    <button onclick="addToCart('Product 7', 99)">Order Now</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./images/p8.png" alt="">
+                <div class="card-body">
+                    <h3>Bed</h3>
+
+                    <h5 class="price">Price $2299</h5>
+                    <button onclick="addToCart('Product 8', 2299)">Order Now</button>
+                </div>
+            </div>
+            <div id="cart">
+                <h2>Shopping Cart</h2>
+                <ul id="cart-items"></ul>
+                <p>Total: $<span id="total">0.00</span></p>
+                <button onclick="checkout()">Checkout</button>
+        </div>
+
+    </section>
+    <!-- Product Section End -->
+
+
+
+
+
+    <!-- Banner Start -->
+    <div class="banner">
+        <div class="banner-content">
+            <h5>Get Discount Up To 50%</h5>
+            <h3>Best Deal For Weak</h3>
+            <p>Get up to 50% off this weak and get offer <br>Don't miss</p>
+            <button><a href="#products">Order</a></button>
+        </div>
+    </div>
+    <!-- Banner End -->
+
+
+
+
+
+
+    <!-- Sale Products Start -->
+    <section class="product" id="products" style="margin-top: 50px;">
+        <div class="main-txt">
+            <h3>50% off products</h3>
+        </div>
+        <div class="card-content">
+            <div class="row">
+                <img src="./images/p9.png" alt="">
+                <div class="card-body">
+                    <h3>Chair</h3>
+
+                    <h5>Price $199</h5>
+                    <button onclick="addToCart('Product ', 199)">Order Now</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./images/p10.png" alt="">
+                <div class="card-body">
+                    <h3>Sofa</h3>
+
+                    <h5>Price $1009</h5>
+                    <button onclick="addToCart('Product ', 1009)">Order Now</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./images/p11.png" alt="">
+                <div class="card-body">
+                    <h3>Sofa</h3>
+
+                    <h5>Price $999</h5>
+                    <button onclick="addToCart('Product ', 999)">Order Now</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./images/p12.png" alt="">
+                <div class="card-body">
+                    <h3>wood vases</h3>
+
+                    <h5>Price $49</h5>
+                    <button onclick="addToCart('Product', 49)">Order Now</button>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    </section>
+    <!-- Sale Products End -->
+
+
+
+
+
+    <!-- Our Gallary Start -->
+    <div class="gallary">
+        <h3>Our Gallary</h3>
+        <div class="gallary-img">
+            <div class="img1">
+                <img src="./images/g1.png" alt="">
+            </div>
+            <div class="img1">
+                <img src="./images/g2.png" alt="">
+                <img src="./images/g3.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Our Gallary End -->
+
+
+
+
+
+    <!-- Contact Section Start -->
+    <section class="contact" id="contact">
+        <div class="content-text">
+            <h2>Get In <span>Touch</span></h2>
+            <p>We'd love to hear from you. Reach out to us for any inquiries or assistance.</p>
+            <div class="list">
+                <li><a href="#">+9165625656</a></li>
+                <li><a href="#">mkj9740@gmail.com</a></li>
+                <li><a href="#">Sanjay Kumar</a></li>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form  id="inquiryForm" method="post" >
+                <input type="name" placeholder="Name" required>
+                <input type="number" placeholder="Phone" required>
+                <input type="email" placeholder="Email" required>
+                <textarea name="" id="" cols="35" rows="10" placeholder="Message"></textarea>
+          
+                <input type="submit" value="Submit" />
+
+            </form>
+        </div>
+
+    </section>
+    <!-- Contact Section End -->
+
+
+
+
+
+
+
+
+    <!-- Footer Start -->
+    <footer id="footer">
+        <div class="footer-content">
+ 
+            
+            <div class="socail-links">
+               <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+               <a href="https://www.twitter.com/"> <i class="fa-brands fa-twitter"></i></a>
+                
+               <a href="https://www.instagram.com/">  <i class="fa-brands fa-instagram"></i>
+                <a href="https://www.youtube.com/"> <i class="fa-brands fa-youtube"></i>
+                <a href="https://www.pinterest.com/">  <i class="fa-brands fa-pinterest-p"></i>
+                    <a href="https://www.googlemaps.com/">  <i class="fa fa-map-marker"></i>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom-content">
+            <div class="copyright">
+                <p>&copy;Copyright <strong>manish industry</strong>. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+    <a href="#" class="arrow"><i><img src="./images/up-arrow.png" alt="" width="20px"></i></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
